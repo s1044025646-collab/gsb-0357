@@ -1,0 +1,14 @@
+{
+  "name": "bowling-scorer",
+  "version": "1.0.0",
+  "description": "十瓶保龄球逐球计分后端（API + CLI）",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/scoring.test.js dist/test/store.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/cli.js demo"
+  }
+}
